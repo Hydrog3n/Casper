@@ -60,7 +60,13 @@ Casper uses inline SVG icons, included via Handlebars partials. You can find all
 
 You can add your own SVG icons in the same manner.
 
+# Edition by @hydrog3n
 
+- Add parametres for sharing icons (Doens't work for the moment)
+- Add post time `in post-card.hbs`
+- Add locales fr
+- Add github icons and entry in `site-nav.hbs`
+- Add `docker-compose.yml` for dev run `docker-compose up -d`
 # Copyright & License
 
 Copyright (c) 2013-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
