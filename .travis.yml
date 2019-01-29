@@ -1,6 +1,24 @@
 language: node_js
 sudo: false
 node_js:
-  - "8"
+- node
+- '8'
+- lts/*
 
+cache:
+  yarn: true
 
+install:
+  - yarn install
+  - yarn zip
+
+test:
+  - yarn test
+
+deploy:
+  provider: releases
+  api_key:
+  file: dist/casper.zip
+  skip_cleanup: true
+  on:
+    tags: true
