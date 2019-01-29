@@ -25,6 +25,7 @@
                     <span class="post-card-tags">{{primary_tag.name}}</span>
                 {{/if}}
                 <h2 class="post-card-title">{{title}}</h2>
+                <span class="post-card-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</span>
             </header>
 
             <section class="post-card-excerpt">
@@ -53,9 +54,7 @@
                 </li>
             {{/foreach}}
             </ul>
-
-            <span class="reading-time">{{reading_time}}</span>
-
+            <span class="reading-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
         </footer>
 
     </div>{{!--/.post-card-content--}}
